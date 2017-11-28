@@ -9,8 +9,8 @@ require_once($_SERVER['DOCUMENT_ROOT']. "/bitrix/modules/main/include/prolog_bef
 <?php 
 CModule::IncludeModule("iblock");
 $res=CIBlockElement::GetList(
-  Array("SORT"=>"ASC"),
-  Array("IBLOCK_ID"=>3,array('<ID'=>$_REQUEST['id'])),
+  Array("ID"=>"ASC"),
+  Array("IBLOCK_ID"=>3,"ACTIVE"=>"Y",array('<ID'=>$_REQUEST['id'])),
   false,
   array('iNumPage'=>$_REQUEST['page'],'nPageSize'=>5),
   Array("IBLOCK_ID",'ID',"NAME","ACTIVE_FROM","PROPERTY_ACTION")
