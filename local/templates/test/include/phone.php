@@ -1,0 +1,1 @@
+<div class="callback-phone">+7 (495) 000-00-00</div>
